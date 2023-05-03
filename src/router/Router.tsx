@@ -1,9 +1,20 @@
-import { Home } from '@components/pages'
+import { Food, Home } from '@components/pages'
+import { RootView } from '@components/template'
 import { createBrowserRouter } from 'react-router-dom'
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home />,
+        element: <RootView />,
+        children: [
+            {
+                path: '/',
+                element: <Home />,
+            },
+            {
+                path: '/foods',
+                element: <Food />,
+            },
+        ],
     },
 ])
