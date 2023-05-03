@@ -1,0 +1,9 @@
+.table {
+  /* display: none; */
+
+  tbody {
+    tr:nth-child(even) {
+      @apply bg-gray-50;
+    }
+  }
+}
