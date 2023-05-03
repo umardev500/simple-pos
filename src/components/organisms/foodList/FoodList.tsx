@@ -3,8 +3,8 @@ import React from 'react'
 
 export const FoodList: React.FC = () => {
     return (
-        <div className="mt-8">
-            <table className="w-full table">
+        <div className="mt-8 overflow-auto">
+            <table className="w-full table food-table">
                 <thead>
                     <tr className="text-gray-600 bg-gray-100">
                         <th className="py-4 px-4 w-20 font-medium text-center">#</th>
