@@ -1,4 +1,5 @@
 import { FoodList } from '@components/organisms'
+import { Pagination } from '@components/organisms/pagination'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -10,6 +11,9 @@ export const Food: React.FC = () => {
             </Link>
             <div>
                 <FoodList />
+                <div className="py-4 flex mt-6 justify-center xl:justify-end px-8">
+                    <Pagination pageCount={4} />
+                </div>
             </div>
         </div>
     )
