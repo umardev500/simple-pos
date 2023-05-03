@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "header/header";
+
+
+body {
+  background-color: rgb(243, 244, 249);
+}
+
+@media (min-width: 1536px) {
+  .container {
+    /* max-width: 1124px; */
+  }
+}
